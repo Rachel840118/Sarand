@@ -204,7 +204,8 @@
             .mobile-menu { max-height: 0; overflow: hidden; transition: max-height .32s ease; }
             .mobile-menu.is-open { max-height: 320px; border-top: 1px solid #ece0df; }
         }
-    </style>
+</style>
+<link href="auth.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant transition-all duration-500 ease-in-out">
@@ -225,7 +226,7 @@
 <button aria-label="상품 검색" class="icon-button hover:opacity-70 transition-opacity duration-300 transform hover:scale-110" data-action="open-search" type="button">
 <span class="material-symbols-outlined text-on-surface">search</span>
 </button>
-<button aria-label="내 계정" class="icon-button hover:opacity-70 transition-opacity duration-300 transform hover:scale-110" data-action="open-account" type="button">
+<button aria-label="내 계정" class="icon-button hover:opacity-70 transition-opacity duration-300 transform hover:scale-110" data-action="open-account" id="account-button" type="button">
 <span class="material-symbols-outlined text-on-surface">person</span>
 </button>
 <button aria-label="장바구니" class="icon-button hover:opacity-70 transition-opacity duration-300 relative transform hover:scale-110" data-action="open-cart" type="button">
@@ -468,4 +469,5 @@
 </div>
 </footer>
 <script src="app.js"></script>
+<script src="auth.js" type="module"></script>
 </body></html>

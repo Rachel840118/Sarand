@@ -275,15 +275,11 @@
   };
 
   const openAccount = (trigger) => {
-    const profile = readLocal('sarand-profile-v1', {});
-    openInfo('Your SARAND profile', 'Private client', `
-      <p>관심 컬렉션과 주문 요청을 이 기기에서 편하게 확인할 수 있습니다.</p>
-      <form class="mt-7 grid gap-5" id="profile-form" novalidate>
-        <label><span class="font-label-sm uppercase tracking-wider">Name</span><input class="mt-2 w-full border-outline-variant bg-transparent" name="name" value="${escapeHtml(profile.name || '')}" required type="text"/></label>
-        <label><span class="font-label-sm uppercase tracking-wider">Email</span><input class="mt-2 w-full border-outline-variant bg-transparent" name="email" value="${escapeHtml(profile.email || '')}" required type="email"/></label>
-        <button class="brand-primary-bg text-white py-4 font-label-md uppercase tracking-[.16em]" type="submit">Save Profile</button>
-      </form>
-    `, trigger);
+    if (window.SarandAuth?.open) {
+      window.SarandAuth.open(trigger);
+      return;
+    }
+    notify('로그인 서비스를 불러오는 중입니다. 잠시 후 다시 시도해 주세요.');
   };
 
   const setCartQuantity = (productId, quantity) => {
