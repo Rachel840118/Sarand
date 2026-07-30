@@ -1,25 +1,471 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SHARAN de jinhwa — Haute Joaillerie</title>
-  <meta name="description" content="Modern heirloom jewellery, shaped by light, memory, and the hand.">
-  <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ko" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SARAND | Fine Jewelry</title>
+<meta content="SARAND — 사랑의 연결을 섬세한 주얼리로 기록하는 서울의 파인 주얼리 브랜드" name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f7ebeb",
+                        "surface": "#fff8f7",
+                        "surface-bright": "#fff8f7",
+                        "tertiary-container": "#647591",
+                        "on-tertiary-fixed": "#091c33",
+                        "primary-container": "#a4616d",
+                        "tertiary-fixed-dim": "#b6c7e6",
+                        "on-primary-fixed-variant": "#6e3540",
+                        "surface-variant": "#ece0df",
+                        "surface-tint": "#8a4c58",
+                        "error-container": "#ffdad6",
+                        "secondary": "#76565b",
+                        "secondary-fixed": "#ffd9de",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#f2e5e5",
+                        "tertiary": "#4c5d77",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#ece0df",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#fffbff",
+                        "on-secondary-fixed": "#2c1519",
+                        "on-secondary-container": "#7a5a5f",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#ffd5db",
+                        "inverse-surface": "#352f2f",
+                        "surface-container-low": "#fdf1f0",
+                        "on-tertiary-fixed-variant": "#364861",
+                        "on-tertiary-container": "#fefcff",
+                        "on-primary-fixed": "#380a16",
+                        "inverse-primary": "#ffb2be",
+                        "outline-variant": "#d7c1c3",
+                        "on-secondary-fixed-variant": "#5c3f44",
+                        "on-surface-variant": "#524345",
+                        "inverse-on-surface": "#faeeee",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#e3d7d7",
+                        "primary": "#a76470",
+                        "secondary-fixed-dim": "#e5bcc2",
+                        "on-surface": "#201a1a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffd9de",
+                        "outline": "#847375",
+                        "on-background": "#201a1a",
+                        "tertiary-fixed": "#d4e3ff",
+                        "primary-fixed-dim": "#ffb2be",
+                        "background": "#fff8f7",
+                        "subtle-accent": "#a76470"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "gutter-desktop": "32px",
+                        "margin-desktop": "80px",
+                        "gutter-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-sm": ["Libre Caslon Text"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .luxury-line {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d7c1c3, transparent);
+        }
+        
+        /* Shimmering Overlay Effect */
+        .shimmer-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.05) 45%,
+                rgba(255, 255, 255, 0.1) 50%,
+                rgba(255, 255, 255, 0.05) 55%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            background-size: 200% 200%;
+            animation: shimmer 12s infinite linear;
+            pointer-events: none;
+            z-index: 1;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% -200%; }
+            100% { background-position: 200% 200%; }
+        }
+
+        /* Micro-interactions */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-interact {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .btn-interact:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(167, 100, 112, 0.3);
+        }
+
+        /* Entrance Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Brand Colors */
+        .brand-primary-bg { background-color: #a76470; }
+        .brand-primary-text { color: #a76470; }
+        .brand-primary-border { border-color: #a76470; }
+
+        /* Store interactions */
+        body.is-locked { overflow: hidden; }
+        .app-overlay { position: fixed; inset: 0; z-index: 90; background: rgba(32, 26, 26, .46); opacity: 0; pointer-events: none; transition: opacity .28s ease; }
+        .app-overlay.is-open { opacity: 1; pointer-events: auto; }
+        .store-panel { position: fixed; z-index: 100; background: #fff8f7; color: #201a1a; transition: transform .35s cubic-bezier(.22, 1, .36, 1); box-shadow: -18px 0 40px rgba(32,26,26,.1); }
+        .store-panel--right { right: 0; top: 0; bottom: 0; width: min(100%, 460px); transform: translateX(102%); }
+        .store-panel--right.is-open { transform: translateX(0); }
+        .store-modal { position: fixed; z-index: 110; inset: 0; display: grid; place-items: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+        .store-modal.is-open { opacity: 1; pointer-events: auto; }
+        .store-modal__card { width: min(100%, 680px); max-height: min(86vh, 760px); overflow: auto; background: #fff8f7; border: 1px solid #d7c1c3; transform: translateY(14px); transition: transform .25s ease; }
+        .store-modal.is-open .store-modal__card { transform: translateY(0); }
+        .toast { position: fixed; z-index: 130; bottom: 24px; left: 50%; max-width: calc(100% - 32px); transform: translate(-50%, 16px); padding: 14px 18px; background: #352f2f; color: #faeeee; font: 500 12px/1.4 'Hanken Grotesk', sans-serif; letter-spacing: .07em; text-transform: uppercase; opacity: 0; pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+        .toast.is-open { opacity: 1; transform: translate(-50%, 0); }
+        .cart-item + .cart-item { border-top: 1px solid #d7c1c3; }
+        .cart-qty { display: inline-flex; border: 1px solid #d7c1c3; align-items: center; }
+        .cart-qty button { width: 30px; height: 30px; font-size: 18px; }
+        .cart-qty span { width: 30px; text-align: center; font-size: 12px; }
+        .icon-button { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; min-height: 34px; }
+        .product-card-button:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid #a76470; outline-offset: 3px; }
+        @media (max-width: 767px) {
+            .mobile-menu { max-height: 0; overflow: hidden; transition: max-height .32s ease; }
+            .mobile-menu.is-open { max-height: 320px; border-top: 1px solid #ece0df; }
+        }
+    </style>
 </head>
-<body>
-  <main>
-    <section class="hero" id="home">
-      <header><a class="brand" href="#home"><b>SHARAN</b><i>de jinhwa</i></a><nav><a href="#collections">Collections</a><a href="#maison">The Maison</a><a href="#bespoke">Bespoke</a><a href="#contact">Contact</a></nav></header>
-      <div class="hero-copy"><p class="eyebrow">Haute Joaillerie · Seoul</p><h1>A Quiet<br>Radiance</h1><p>Jewels shaped by light, memory, and the hand.</p><a class="button" href="#collections">Discover the Collection <span>↗</span></a></div>
-      <div class="hero-foot">Collection · Lumière Parisienne <span></span> MMXXVI</div>
-    </section>
-    <section class="manifesto" id="maison"><p class="index">01 — The Maison</p><div><h2>Not simply worn.<br><em>Remembered.</em></h2><p>SHARAN de jinhwa creates modern heirlooms with the intimacy of memory and the precision of fine craft. Every line begins by hand, then finds its final form in precious metal and light.</p><a class="under" href="#craft">Our story ↗</a></div></section>
-    <section class="collections" id="collections"><div class="heading"><p class="eyebrow">Signature Collections</p><h2>Three expressions<br>of eternal light.</h2></div><div class="cards"><a href="#contact"><small>01</small><div><h3>Lumière</h3><p>Diamond · Champagne Gold</p></div><span>↗</span></a><a href="#contact"><small>02</small><div><h3>Éclat</h3><p>Sculptural Gold</p></div><span>↗</span></a><a href="#contact"><small>03</small><div><h3>Éternelle</h3><p>Bridal · Bespoke</p></div><span>↗</span></a></div></section>
-    <section class="craft" id="craft"><div class="photo"></div><div class="copy"><p class="index">02 — Savoir-faire</p><h2>The poetry<br>of the hand.</h2><p>From the first gesture in graphite to the last stone set beneath a loupe, each SHARAN creation is made slowly. Proportion, movement and the warmth of gold are considered until the jewel feels inevitable.</p><ol><li>Hand-drawn in Seoul</li><li>Ethically selected stones</li><li>Finished by master artisans</li></ol></div></section>
-    <section class="bespoke" id="bespoke"><p class="eyebrow">Private Atelier</p><h2>Your story,<br><em>made eternal.</em></h2><p>A private commission begins with a conversation. Together, we shape a one-of-one jewel around your story, stone and moment.</p><a class="button" href="#contact">Begin a commission <span>↗</span></a></section>
-    <section class="contact" id="contact"><div><p class="index">Private appointments</p><h2>Enter the world<br>of SHARAN.</h2></div><div class="contact-copy"><p>For appointments and bespoke enquiries, please contact our Seoul atelier.</p><a class="under" href="mailto:atelier@sharandjinhwa.com">atelier@sharandjinhwa.com ↗</a></div></section>
-  </main>
-  <footer><a class="brand" href="#home"><b>SHARAN</b><i>de jinhwa</i></a><p>Haute joaillerie, shaped in Seoul.</p><small>© 2026 SHARAN de jinhwa</small></footer>
-</body>
-</html>
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center px-margin-desktop py-6 w-full max-w-container-max mx-auto" id="main-nav">
+<div class="flex-1 flex justify-start">
+<a aria-label="SARAND 홈" class="block h-10 w-auto hover:opacity-80 transition-opacity" href="#top">
+<img alt="SARAND Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ-rtGj_KbrPSomT5lKBJcGNkx34eltdztaMhm-QXbkV6rVz_03tH5t9F3SCR9NGjH8NsXUhOr_eIgR0E5maki2rOsRYwrsdU7NbEiJ95wl_nin7MXBANaxq5vGN8lRNwFS088-3Diqt-IKPq3xSHIPTeSlYBIAFOE-tifKoYPUe9jyCM2eo19XeU1Dk4YHhnPeWVfKQYSvU85ahWl46DdgnE-dB_8v9OTtmKIp4SU14pLVsjnEik"/>
+</a>
+</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-label-md text-label-md tracking-widest uppercase brand-primary-text border-b brand-primary-border pb-1 transition-all duration-300" href="#shop">High Jewelry</a>
+<a class="nav-link font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:brand-primary-text transition-colors" href="#shop">Jewelry</a>
+<a class="nav-link font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:brand-primary-text transition-colors" href="#collections">COLLECTION</a>
+<a class="nav-link font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:brand-primary-text transition-colors" href="#gifts">Gifts</a>
+<a class="nav-link font-label-md text-label-md tracking-widest uppercase text-on-surface-variant hover:brand-primary-text transition-colors" href="#story">World of SARAND</a>
+</div>
+<div class="flex-1 flex justify-end items-center space-x-6">
+<button aria-label="상품 검색" class="icon-button hover:opacity-70 transition-opacity duration-300 transform hover:scale-110" data-action="open-search" type="button">
+<span class="material-symbols-outlined text-on-surface">search</span>
+</button>
+<button aria-label="내 계정" class="icon-button hover:opacity-70 transition-opacity duration-300 transform hover:scale-110" data-action="open-account" type="button">
+<span class="material-symbols-outlined text-on-surface">person</span>
+</button>
+<button aria-label="장바구니" class="icon-button hover:opacity-70 transition-opacity duration-300 relative transform hover:scale-110" data-action="open-cart" type="button">
+<span class="material-symbols-outlined text-on-surface">shopping_bag</span>
+<span aria-live="polite" class="absolute -top-1 -right-1 brand-primary-bg text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-bold" data-cart-count hidden>0</span>
+</button>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="메뉴 열기" class="icon-button md:hidden hover:opacity-70 transition-opacity" data-action="toggle-menu" type="button">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</button>
+</div>
+</div>
+<div class="mobile-menu md:hidden bg-surface" id="mobile-menu">
+<div class="px-margin-mobile py-5 flex flex-col gap-5 font-label-md text-label-md tracking-widest uppercase">
+<a href="#shop">High Jewelry</a>
+<a href="#shop">Jewelry</a>
+<a href="#collections">Collection</a>
+<a href="#gifts">Gifts</a>
+<a href="#story">World of SARAND</a>
+</div>
+</div>
+</nav>
+<main class="pt-24 overflow-x-hidden" id="top">
+<!-- Hero Section -->
+<section class="hero-container relative h-[90vh] overflow-hidden group">
+<div class="shimmer-overlay"></div>
+<div class="absolute inset-0 z-0">
+<img alt="A high-fashion editorial close-up portrait of a young Korean female model wearing gold and diamond link earrings." class="w-full h-[110%] object-cover absolute -top-[5%] transition-transform duration-1000 ease-out" id="hero-parallax" src="https://lh3.googleusercontent.com/aida/AP1WRLu7Gn6M2sQLp0_XdCzlQYJhNOgZZZ9CB9yM2RsALA1b5gewDhk7rY61n8Fi8Kuy-p85ZZUbpysqrKzUidi2b65a5evPqp4PB4OW_V__0tshqb22V1XpEpAWaslmqVrxvXWsPZHQsoIHu_phpwNHltRXeWpWTIy_VtcBsnJr16K-Sj5oeGOj7k1hvlKDjfgNV_6gQxiSqVFdwx6LtBuWg7xz3fMK1i1-ooYALbduyJDa3YhGVa02j9ce"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/50 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-center px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-2xl space-y-8 reveal active">
+<h1 class="font-display-lg text-display-lg text-on-surface drop-shadow-sm leading-tight">Modern Radiance: <br/>Elevate Your Glow</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                    Celebrating the unbreakable bonds of love with architectural precision and timeless brilliance.
+                </p>
+<div class="pt-4">
+<button class="btn-interact brand-primary-bg text-on-primary px-12 py-5 font-label-md text-label-md uppercase tracking-[0.2em] hover:opacity-95 transition-all duration-500 rounded-none group flex items-center" data-action="scroll-shop" type="button">
+                        Explore Collection
+                        <span class="inline-block transform group-hover:translate-x-2 transition-transform duration-300 ml-4">→</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Iconic Collections -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto reveal active" id="collections">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-gutter-desktop">
+<div class="space-y-4">
+<span class="font-label-md text-label-md brand-primary-text tracking-widest uppercase">The Essentials</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Iconic Collections</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-2">
+                Discover the silhouettes that defined an era of modern elegance.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto">
+<button aria-label="SARAND Knot 컬렉션 보기" class="md:col-span-7 group cursor-pointer overflow-hidden bg-surface-container reveal active text-left" data-action="show-collection" data-collection="Knot" type="button">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvywExDUqBnXQRrfIl8yjHW-FXDrUCKJYzO4gajznVCXDVPGpAoyCTVujnvyasdUWKmFhMqhhH59P-5b1kIDs39AcAYmp8_thvxPT6HGDe80yRdwD4q8p1L6s5u89CoyB2Vs70BmjztR-jtHObrbR1aM8gTKSiClQ88DEj5wJD46HEDjzAIhuuExuIWe5TDMmMu-uwnY4ItVsaY1fUC9N9t4nolHz2C1tMQq8diqhLAqgPNN9UsLsBZgx__VC8KYZo"/>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-2">SARAND Knot</h3>
+<span class="font-label-md text-label-md uppercase tracking-widest border-b border-white pb-1 transition-all group-hover:pb-2">Shop Now</span>
+</div>
+</div>
+</button>
+<div class="md:col-span-5 flex flex-col gap-8">
+<button aria-label="SARAND HardWear 컬렉션 보기" class="group cursor-pointer overflow-hidden bg-surface-container flex-1 reveal active text-left" data-action="show-collection" data-collection="HardWear" type="button">
+<div class="relative aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC47oxpknCnd51YaWlyaR8uKN1wGtH5tkbPaeeoeHWbg2hvzy7x7ckzrMRN5eYkqSGy-ocobd6C2txdNGF-TQHgzXtnLvE5s0sB_735z-Lj1OwG5YO3sV20NQzowB4Yj_Iek7YDsaBE5g01vE-HR6JQ8Y6A59cf7NFtGvac8cCC4gxSLx7vQfwVlVFTdmeGiWG-VrT6ljDyTTTRw3IpcaksnoOy2HWz26Dg5XWh48TPguLYbgqkrdc"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-2">SARAND HardWear</h3>
+<span class="font-label-md text-label-md uppercase tracking-widest border-b border-white pb-1 transition-all group-hover:pb-2">Explore</span>
+</div>
+</div>
+</button>
+<button class="brand-primary-bg p-12 flex flex-col justify-center items-center text-center space-y-6 reveal btn-interact cursor-pointer active" data-action="open-consultation" type="button">
+<span class="material-symbols-outlined text-white text-5xl" style='font-variation-settings: "FILL" 1;'>diamond</span>
+<h4 class="font-headline-sm text-headline-sm text-white">Made to Order</h4>
+<p class="font-body-md text-body-md text-white opacity-80">Design your own legacy with our bespoke engagement services.</p>
+<span class="font-label-md text-label-md text-white border-b border-white pb-1 uppercase tracking-widest">Consult an Expert</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Brand Story -->
+<section class="bg-inverse-surface text-surface py-section-gap overflow-hidden" id="story">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center reveal active">
+<div class="space-y-10 order-2 md:order-1">
+<span class="font-label-md text-label-md brand-primary-text tracking-[0.3em] uppercase reveal active">The Heritage</span>
+<h2 class="font-display-lg text-display-lg leading-tight reveal active">Craftsmanship <br/>Passed Through Generations</h2>
+<p class="font-body-lg text-body-lg text-surface-variant opacity-80 leading-relaxed reveal active">
+                    SARAND는 사랑의 연결을 오래 남는 형태로 기록합니다. 서울에서 시작한 우리의 주얼리는 정교한 세공과 절제된 현대적 실루엣으로, 매일의 특별한 순간에 빛을 더합니다.
+                </p>
+<button class="btn-interact border border-surface px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:brand-primary-bg hover:border-primary transition-all duration-500 reveal active" data-action="open-story" type="button">
+                    Our Story
+                </button>
+</div>
+<div class="relative order-1 md:order-2 reveal active">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3uVsK-dKosWyLP6oQsOlvcOLXO7uUg4C8vc6pfImocOpUFaKCx9uHLFFfMAP3M4DgrvhXcqM2CgoVY-NnhPBn1xeGQQKByMeObPQugekmzdmCTxKotRobWIJmfV8Y1XrIblx-Qj7oEENAvKXJuVEbb97q57TWOCGmRfKNOMeiUkZFV_2fFwzeg57Ael2Y2X99yhvFQb4UZjgShhLC0Jgv2jIZyGGXnjYBEM9TDXeBrOUYVWtS7gE"/>
+</div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 border-4 brand-primary-border opacity-20 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto reveal active" id="shop">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Curated Selections</h2>
+<div class="luxury-line w-24 mx-auto mb-8"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Product 1 -->
+<article class="group cursor-pointer reveal active" data-product-card="diamond-smile">
+<div class="bg-surface-container p-12 mb-6 aspect-square flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLszhqoZxjlXvO_qBp3zGJG3NPF-4J8SqDlfXGa2otSphHd52M9G5mkbnk9ZBdzlP0_xxH_FpM3FSF4IO6iXOPSJTQB2idsIp9KAUFxOJPjPOvIKxoZscz7Q2Rf8FxvwZLkAe5K2Nw6LErV5hF9LHjcUDyhbmv4VXU7ixiNXh3-clT6eEUekWiMENzX6WzXMU_6gJGWDoI6ShQEB1URFJVbvJo-Pubc7OQRUM3qZpIc3yMNDahUDo-c8XQ"/>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 btn-interact brand-primary-bg text-on-primary px-8 py-3 opacity-0 group-hover:opacity-100 transition-all duration-300 font-label-sm text-label-sm uppercase whitespace-nowrap" data-action="quick-shop" data-product-id="diamond-smile" type="button">
+                        Quick Shop
+                    </button>
+</div>
+<div class="text-center">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-1">SARAND T</p>
+<h3 class="font-body-md text-body-md text-on-surface mb-2">Diamond Smile Pendant</h3>
+<p class="font-label-md text-label-md text-on-surface font-bold">₩2,850,000</p>
+</div>
+</article>
+<!-- Product 2 -->
+<article class="group cursor-pointer reveal active" data-product-card="narrow-diamond-ring">
+<div class="bg-surface-container p-12 mb-6 aspect-square flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLuC9HIHI2Uq39aT_NAJCxd4xNJnN6e19tZ_zl62S1nCJVi930iu1J-0lH0g8YOT1opuc1-Ulm2lJXy1Uu5MQalWStQg_LKstMmNhri_hBPEGoJWTMOY-gTAtK55yxkDhnKW1oe6-fIncJC9ADrE4ZZftLXrBCCf5PwW5DjwbUA0qzuhROMeR7ds2Sn6JKW4rILjl8tLpNMHlB1DENVqf9rAfkamFe5Qx76RHtLPbJ-lhCsfhby9i9ZnIA"/>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 btn-interact brand-primary-bg text-on-primary px-8 py-3 opacity-0 group-hover:opacity-100 transition-all duration-300 font-label-sm text-label-sm uppercase whitespace-nowrap" data-action="quick-shop" data-product-id="narrow-diamond-ring" type="button">
+                        Quick Shop
+                    </button>
+</div>
+<div class="text-center">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-1">SARAND T1</p>
+<h3 class="font-body-md text-body-md text-on-surface mb-2">Narrow Diamond Ring</h3>
+<p class="font-label-md text-label-md text-on-surface font-bold">₩1,900,000</p>
+</div>
+</article>
+<!-- Product 3 -->
+<article class="group cursor-pointer reveal active" data-product-card="vine-pendant">
+<div class="bg-surface-container p-12 mb-6 aspect-square flex items-center justify-center relative overflow-hidden">
+<img class="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLswy30ZmJye5WdZyBDN2h05uW2PCDNRiL_xLEdVDMXqL9t7jf-1hX-EB6-YcroPfjTMyOJh7Cdh5GHzFsLhT-6V-n9eVE563PY2gq89IZinteVxB6b3Y8PX7sLdW1MoSfaxMhGBO5PN3K6-AR2cUSSDzY6rJf7vwk8u91frDJKPxGCrLq3e2VXUCgzrN0KwYY3odYWF3DrunRzZWWWBFmqhltCbof5Mxn2e5YkzRoFQ-ZSghxBf98TuLg"/>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 btn-interact brand-primary-bg text-on-primary px-8 py-3 opacity-0 group-hover:opacity-100 transition-all duration-300 font-label-sm text-label-sm uppercase whitespace-nowrap" data-action="quick-shop" data-product-id="vine-pendant" type="button">
+                        Quick Shop
+                    </button>
+</div>
+<div class="text-center">
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-1">SARAND Victoria</p>
+<h3 class="font-body-md text-body-md text-on-surface mb-2">Vine Pendant</h3>
+<p class="font-label-md text-label-md text-on-surface font-bold">₩5,400,000</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Summer Icons Section -->
+<section class="py-section-gap bg-surface-container" id="gifts">
+<div class="px-margin-desktop max-w-container-max mx-auto reveal active">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop items-center">
+<div class="md:col-span-8 overflow-hidden rounded-lg group">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-[3000ms]" src="https://lh3.googleusercontent.com/aida/AP1WRLusU3dGvJrn-DqhH89jR16Tfm8n01qf9WxieAobyzp2WT6cUSXBkqgCU_uVQ2bWLAd8ldLDmgVGsUVsr3hsNxoY6DLdEhoRFqrntzlJD3aXaeoqH_mObWz849zj2YOuuQDXdfrqE48j6ynSqSLO0yBM0EO0TA61gfnwcz2Z3k-JfwvKy8Z92gatLoG-tnJXbzVKuCFQmBlcHxj6h0z7Z_1qUIURqNYM2RPjNMsD5Ws4-qbt4_IBLgp29Q"/>
+</div>
+<div class="md:col-span-4 p-8 md:p-12 space-y-6">
+<span class="font-label-md text-label-md brand-primary-text uppercase tracking-[0.2em] reveal active">Seasonal edit</span>
+<h2 class="font-headline-md text-headline-md leading-tight reveal active">Summer Icons: <br/>The Golden Hour</h2>
+<p class="font-body-md text-body-md text-on-surface-variant reveal active">
+                        A curated collection of effortless pieces designed to catch the sun and celebrate the season of light.
+                    </p>
+<button class="btn-interact brand-primary-bg text-on-primary px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:opacity-95 transition-colors duration-300 reveal active" data-action="open-story" type="button">
+                        Story
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-surface-variant reveal active">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-gutter-desktop px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-2 space-y-8">
+<a class="font-display-lg text-headline-sm text-on-surface block hover:opacity-80 transition-opacity" href="#top">SARAND</a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                Stay connected with the latest from SARAND. Be the first to know about new collections, exclusive events, and more.
+            </p>
+<form class="flex flex-col space-y-4 max-w-sm" id="newsletter-form" novalidate>
+<div class="relative group">
+<input aria-label="뉴스레터 이메일" class="w-full bg-transparent border-0 border-b border-on-surface-variant py-3 focus:ring-0 focus:border-primary font-body-md placeholder:text-on-surface-variant/50 transition-colors" id="newsletter-email" placeholder="Email Address" required type="email"/>
+<button aria-label="뉴스레터 구독" class="absolute right-0 top-1/2 -translate-y-1/2 group-hover:brand-primary-text transition-all transform hover:scale-125" type="submit">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<label class="flex items-start space-x-3 cursor-pointer group">
+<input class="mt-1 rounded-sm border-on-surface-variant brand-primary-text focus:ring-primary cursor-pointer" id="newsletter-consent" required type="checkbox"/>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest leading-relaxed group-hover:text-on-surface transition-colors">By signing up, you agree to receive communications from SARAND and accept our Privacy Policy.</span>
+</label>
+</form>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-on-surface font-bold">Customer Support</h4>
+<ul class="space-y-4">
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="open-contact" type="button">Contact Us</button></li>
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="open-consultation" type="button">Book an Appointment</button></li>
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="open-tracking" type="button">Track Your Order</button></li>
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="open-care" type="button">Product Care</button></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-on-surface font-bold">About SARAND</h4>
+<ul class="space-y-4">
+<li><a class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" href="#story">Our Story</a></li>
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="open-story" type="button">Sustainability</button></li>
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="coming-soon" type="button">Careers</button></li>
+<li><button class="nav-link font-body-md text-body-md text-on-surface-variant hover:brand-primary-text transition-all" data-action="coming-soon" type="button">Investors</button></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-on-surface font-bold">Follow Us</h4>
+<div class="flex space-x-6">
+<button aria-label="웹사이트 준비 중" class="hover:brand-primary-text transition-all transform hover:scale-125" data-action="coming-soon" type="button">
+<span class="material-symbols-outlined text-on-surface">public</span>
+</button>
+<button aria-label="인스타그램 준비 중" class="hover:brand-primary-text transition-all transform hover:scale-125" data-action="coming-soon" type="button">
+<span class="material-symbols-outlined text-on-surface">photo_camera</span>
+</button>
+<button aria-label="YouTube 준비 중" class="hover:brand-primary-text transition-all transform hover:scale-125" data-action="coming-soon" type="button">
+<span class="material-symbols-outlined text-on-surface">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-surface-variant py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">© 2026 SARAND. All Rights Reserved.</span>
+<div class="flex space-x-8">
+<button class="nav-link font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest hover:brand-primary-text transition-colors" data-action="open-policy" type="button">Legal</button>
+<button class="nav-link font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest hover:brand-primary-text transition-colors" data-action="open-policy" type="button">Privacy</button>
+<button class="nav-link font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest hover:brand-primary-text transition-colors" data-action="open-policy" type="button">Cookies</button>
+</div>
+</div>
+</footer>
+<script src="app.js"></script>
+</body></html>
