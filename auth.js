@@ -35,7 +35,7 @@ const authDialog = document.createElement('section');
 authDialog.className = 'auth-dialog';
 authDialog.id = 'auth-dialog';
 authDialog.setAttribute('aria-hidden', 'true');
-authDialog.setAttribute('aria-label', 'SARAND 회원 로그인');
+authDialog.setAttribute('aria-label', 'SHARAND 회원 로그인');
 authDialog.setAttribute('aria-modal', 'true');
 authDialog.setAttribute('role', 'dialog');
 authDialog.innerHTML = `
@@ -43,7 +43,7 @@ authDialog.innerHTML = `
     <header class="auth-dialog__header">
       <div>
         <p class="auth-eyebrow">Private client</p>
-        <h2 class="auth-dialog__title">Welcome to SARAND</h2>
+        <h2 class="auth-dialog__title">Welcome to SHARAND</h2>
       </div>
       <button aria-label="로그인 창 닫기" class="auth-close" data-auth-close type="button"><span class="material-symbols-outlined">close</span></button>
     </header>
@@ -70,7 +70,7 @@ authDialog.innerHTML = `
             <div class="auth-field"><label for="auth-sign-up-name">이름</label><input autocomplete="name" id="auth-sign-up-name" name="name" required type="text"/></div>
             <div class="auth-field"><label for="auth-sign-up-email">이메일</label><input autocomplete="email" id="auth-sign-up-email" name="email" required type="email"/></div>
             <div class="auth-field"><label for="auth-sign-up-password">비밀번호</label><input autocomplete="new-password" id="auth-sign-up-password" minlength="6" name="password" required type="password"/><span class="auth-label">6자 이상 입력해 주세요</span></div>
-            <button class="auth-submit" type="submit">SARAND 계정 만들기</button>
+            <button class="auth-submit" type="submit">SHARAND 계정 만들기</button>
           </form>
         </section>
 
@@ -83,7 +83,7 @@ authDialog.innerHTML = `
         <p class="auth-eyebrow">Private client</p>
         <h3 class="auth-client-name" data-auth-client-name></h3>
         <p class="auth-client-email" data-auth-client-email></p>
-        <p class="auth-client-note">SARAND에 로그인되어 있습니다. 관심 피스를 담고 프라이빗 상담을 시작해 보세요.</p>
+        <p class="auth-client-note">SHARAND에 로그인되어 있습니다. 관심 피스를 담고 프라이빗 상담을 시작해 보세요.</p>
         <button class="auth-signout" data-auth-signout type="button">로그아웃</button>
       </section>
 
@@ -127,7 +127,7 @@ const errorMessage = (error) => {
   return messages[error?.code] || '로그인 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.';
 };
 
-const displayName = (user) => user?.displayName?.trim() || user?.email?.split('@')[0] || 'SARAND Client';
+const displayName = (user) => user?.displayName?.trim() || user?.email?.split('@')[0] || 'SHARAND Client';
 
 const setMessage = (message = '', type = '') => {
   refs.message.textContent = message;
