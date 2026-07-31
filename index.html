@@ -1,159 +1,333 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SHARAND JINHWA SEOUL — 검은 석재의 깊이와 금빛의 온기로 완성하는 서울의 파인 주얼리 메종.">
-  <title>SHARAND JINHWA SEOUL — Fine Jewelry Maison</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="auth.css?v=20260801">
-  <link rel="stylesheet" href="styles.css?v=20260801">
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHARAND Jinhwa Seoul | New Luxury High Jewelry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#303035",
+                        "inverse-surface": "#e4e1e9",
+                        "on-secondary-fixed": "#1a1b21",
+                        "secondary-fixed-dim": "#c6c6ce",
+                        "background": "#131318",
+                        "surface-container-highest": "#35343a",
+                        "error-container": "#93000a",
+                        "on-tertiary": "#2f3131",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-container": "#1f1f24",
+                        "outline-variant": "#444748",
+                        "surface-dim": "#131318",
+                        "surface-variant": "#35343a",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "secondary-fixed": "#e2e1ea",
+                        "primary": "#ffffff",
+                        "tertiary-container": "#e2e2e2",
+                        "surface-tint": "#c6c6c7",
+                        "surface-bright": "#39383e",
+                        "inverse-primary": "#5d5f5f",
+                        "on-secondary": "#2f3037",
+                        "primary-container": "#e2e2e2",
+                        "on-primary": "#2f3131",
+                        "on-surface": "#e4e1e9",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary": "#ffffff",
+                        "error": "#ffb4ab",
+                        "surface-elevated": "#1A1A24",
+                        "surface": "#131318",
+                        "on-background": "#e4e1e9",
+                        "on-secondary-container": "#b5b4bd",
+                        "on-primary-fixed-variant": "#454747",
+                        "secondary": "#c6c6ce",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a292f",
+                        "on-tertiary-container": "#636565",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-primary-container": "#636565",
+                        "outline": "#8e9192",
+                        "stroke-soft": "rgba(255, 255, 255, 0.1)",
+                        "surface-container-lowest": "#0e0e13",
+                        "secondary-container": "#45464d",
+                        "surface-container-low": "#1b1b20",
+                        "on-secondary-fixed-variant": "#45464d",
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#c4c7c8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["EB Garamond"],
+                        "headline-sm": ["EB Garamond"],
+                        "display-lg-mobile": ["EB Garamond"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["EB Garamond"],
+                        "label-caps": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(40px);
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .ghost-border {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #131318;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #35343a;
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header" id="top">
-    <a class="brand-lockup" href="#top" aria-label="SHARAND JINHWA SEOUL home">
-      <span class="monogram" aria-hidden="true"><i class="monogram-arch"></i><i class="monogram-stem"></i><i class="monogram-leaf monogram-leaf-left"></i><i class="monogram-leaf monogram-leaf-right"></i></span>
-      <span class="brand-type"><b>SHARAND</b><small>JINHWA SEOUL</small></span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#collection">Collections</a>
-      <a href="#maison">The Maison</a>
-      <a href="#bespoke">Bespoke</a>
-      <a href="#visit">Visit</a>
-    </nav>
-    <div class="header-actions">
-      <button class="account-link" id="account-button" type="button" aria-label="내 계정">Sign in</button>
-      <a class="header-cta" href="#appointment">Private appointment <span aria-hidden="true">↗</span></a>
-    </div>
-    <details class="mobile-menu">
-      <summary aria-label="Open navigation"><i></i><i></i></summary>
-      <nav aria-label="Mobile navigation">
-        <a href="#collection">Collections</a>
-        <a href="#maison">The Maison</a>
-        <a href="#bespoke">Bespoke</a>
-        <a href="#visit">Visit</a>
-        <button id="mobile-account-button" type="button">Sign in</button>
-        <a href="#appointment">Private appointment</a>
-      </nav>
-    </details>
-  </header>
+<body class="bg-background text-on-background selection:bg-primary selection:text-background font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto left-1/2 -translate-x-1/2">
+<div class="flex items-center gap-4">
+<img alt="SHARAND Logo" class="h-8 w-8 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLvl6llVlPoEMXXPOukLFTcFqXsE5Nar5vB_PUcXQDU9qKm7Q_pDKUmpuy8048pmMQEQ5kXcuaNknPJSq0m-iTSl9hIxG49SlycsOM3jzzRQvulCTnOU4lH6GAr4xQPKWOca48u2jrvG39Ou_2g-hNyifOC2y6f7ScxDyHFZu9tyh5pwtWrBh9OXhMK1iZWQX2RgxxdB5xzBmGaL1WrpjubnrgF9DWAlHF-YdjLN5aN1BS75eltGVAXczm-o"/>
+<span class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter leading-none">SHARAND</span>
+</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold border-b border-primary pb-1 transition-all duration-500 ease-in-out" href="#">Collections</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300 transition-all duration-500 ease-in-out" href="#">Heritage</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300 transition-all duration-500 ease-in-out" href="#">Bespoke</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300 transition-all duration-500 ease-in-out" href="#">Boutiques</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity duration-300">person</button>
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity duration-300">shopping_bag</button>
+<button class="md:hidden material-symbols-outlined text-primary" id="mobile-menu-btn">menu</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, ultra-high-definition close-up of a diamond and sapphire necklace draped over a smooth, obsidian-like architectural surface. The lighting is dramatic and low-key, with sharp highlights reflecting off the facets of the precious stones. Deep shadows and a cool-toned atmospheric mist create a sense of mystery and immense luxury. The overall aesthetic is Seoul-inspired minimalism with a dark, sophisticated palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkI-izrQbrM7ag4HVnT5Q2-z-0fCdq5dwFgzmIVXScUV64R6Jutjq_BtcdsK5rcW9O0ll8e3P2vnp1_RzjibJztx_08TebLZARghYY_OIt3nKh61PDObQ6hxk3XWbkYQ9hIPXK0P8H7tm0q_Dgfy1-bP4OsNkGr4c16zi2lFrpsM1-bxD7-im1M1thS5KHyNJvZl1CXwQUVasu28f-ugAfHEv0g3beDTyd_kI1OruDa4M81Mrnb2IQXA')"></div>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h2 class="font-label-caps text-label-caps text-secondary mb-6 tracking-[0.3em] uppercase reveal-on-scroll">The Art of Eternity</h2>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-4xl mx-auto mb-12 reveal-on-scroll" style="transition-delay: 200ms;">Sculpting Light in the Heart of Seoul</h1>
+<div class="flex flex-col md:flex-row gap-6 justify-center reveal-on-scroll" style="transition-delay: 400ms;">
+<button class="px-12 py-4 bg-primary text-background font-label-caps text-label-caps tracking-widest hover:bg-secondary transition-colors duration-300">DISCOVER THE COLLECTION</button>
+<button class="px-12 py-4 border border-white/30 text-primary font-label-caps text-label-caps tracking-widest hover:bg-white/10 transition-colors duration-300">BOOK AN APPOINTMENT</button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50">
+<span class="font-label-caps text-[10px] tracking-[0.4em] uppercase">Scroll</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+</div>
+</section>
+<!-- Celestial Collections (Bento Grid) -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20">
+<div>
+<span class="font-label-caps text-label-caps text-outline mb-4 block">SEASONAL EDIT</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary">Celestial Collections</h2>
+</div>
+<a class="font-label-caps text-label-caps text-primary border-b border-white/20 pb-1 hover:border-white transition-colors mt-6 md:mt-0" href="#">VIEW ALL COLLECTIONS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Focus Card -->
+<div class="md:col-span-8 group overflow-hidden cursor-pointer">
+<div class="aspect-[16/9] relative overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-1000" data-alt="A pair of ethereal platinum earrings featuring rare moonstones and pavé diamonds, displayed as if floating in a dark, star-like void. The lighting is soft and diffused, creating a glass-like glow on the stones. The composition is asymmetrical and modern, highlighting the fluid architecture of the jewelry. Deep midnight blues and silver tones dominate the palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo37x9KBwi-xdPE8R0F2RfR4dV4VH8aoy9yKEQXspSyTDzxT2Jlfj6QBNLmTfMYRjvLlYbPtK0yZq-z7d0KYOlIZShxbCQh60vxaW3xANzr-WydhZHcXqFfxn6yvb3cGJt1eQEcGpYWCSPyIPbZMRR8AdtUzIyUFyDCbqVBYx1qvY2X4fm9agHBI55y6_5rKE_8J2WiXFGSZWbmQA2_aI7rnAniGyHEa4puOJRGY48gzp4S7gsb3gSYQ')"></div>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Lunar Radiance</h3>
+<p class="font-body-md text-on-surface-variant max-w-md">Inspired by the serenity of a Seoul midnight, featuring hand-cut moonstones and rare blue diamonds.</p>
+</div>
+<!-- Side Cards -->
+<div class="md:col-span-4 flex flex-col gap-12">
+<div class="group cursor-pointer">
+<div class="aspect-square relative overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-1000" data-alt="A macro shot of a sleek, minimalist engagement ring made of brushed white gold with a singular, perfect marquise-cut diamond. The setting is architectural and industrial, reflecting the modern skyline of Seoul's Gangnam district. High contrast lighting with crisp edges and deep black reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAM5Cd-99ZwLn4ofOLE-ByNCR2Jx-FL6q0AiE3X5mJDAGft8iFYV61Z0Mvwu5ig9Qi19wS2pJs4UD9DIUWDkO0Adkz5fPZMl3r-SfIErgYStOcjWcQzNAgcAjtcv3EDhG-WgexV3ZQnsqgeXmovivLSHeMaqMPlV5g_M5au-mJknefPoUhEGdYxZaYYKbXMuDJQOE2zvuSpPIFZLWCHh_M8PfIrv3BODIcdcX01pKmz5XFMOZMDrRKisw')"></div>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Solar Flare</h3>
+<p class="font-body-md text-on-surface-variant">The power of the sun captured in 24k gold and yellow sapphires.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square relative overflow-hidden mb-6">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-1000" data-alt="A high-jewelry bracelet consisting of interlocking geometric links, each encrusted with micro-diamonds. The piece is resting on a piece of raw grey granite, juxtaposing the refined jewelry with rugged Seoul mountain stone. The mood is dark, quiet, and incredibly premium." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgkPG9oZNL2J88gACnB7UPqGXR5RA6jDuCjGFPGW12AM28RnTf1ucsFNMPB7MIGAjGo8_MpTitte71Ilv3PDex5qdWJ6HJFq5pY77kXfjCrH_OeT6gPlWILbkcnUielqdUW9IMF_MmyR0Tjr2t1QMI06SryMsw-x0whyLDwv3uu6m5LMki_L-sP7jEL_Qquzj2OhYvRDHoHaUvnyyoxQWyF0mUOAnJVRe8BoqAWUR868mFy1dwMF-WkA')"></div>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Nebula Arc</h3>
+<p class="font-body-md text-on-surface-variant">A cosmic dance of interlocking platinum links and black diamonds.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Master Craftsmanship (Split Layout) -->
+<section class="bg-surface-container-lowest py-32 border-y border-white/5">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="reveal-on-scroll">
+<span class="font-label-caps text-label-caps text-outline mb-4 block">THE ATELIER</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 leading-tight">Precision in Every Facet</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Our master artisans in Seoul dedicate hundreds of hours to a single piece. Combining Joseon-era metalwork techniques with contemporary laser-precision, SHARAND redefines what it means to create heirloom jewelry.</p>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<span class="font-headline-sm text-primary">01</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-2">ETHICAL SOURCING</h4>
+<p class="font-body-md text-on-surface-variant">Every stone is traced from its origin, ensuring conflict-free luxury.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="font-headline-sm text-primary">02</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-2">ARTISANAL HAND-SETTING</h4>
+<p class="font-body-md text-on-surface-variant">Micro-pavé settings applied under high-magnification for seamless brilliance.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative reveal-on-scroll" style="transition-delay: 300ms;">
+<div class="aspect-[4/5] relative z-10">
+<div class="w-full h-full bg-cover bg-center" data-alt="A dramatic photograph of a jeweler's hands working on a delicate piece of jewelry under a single spotlight. Dust motes dance in the air, and the tools are arranged with clinical precision on a dark wooden workbench. The image captures the focus and intense craftsmanship of the brand. Minimalist and cinematic style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCV1AM117jMP-ojJFRVWuvScDcBTv3pGWszZWVqfgclhveuPI9qNf8JXvDi3Kq9y52c8KXboE6FPqf16qBhKVXt9MC_E74rR9r7dAB7aM_OR1fsH6MObPbfYOKMKPJh5tqwY7dd0kVu1URPayl3pQFVskji_qChB6W_fPxJRq2dC0qHyj-ki-3DVSNYQ924soRaBrE5THELv7ozJl8ybkyiFsSLPHL9Ca-Uu0DcrLiTYp4DI5cbPj4hg')"></div>
+</div>
+<div class="absolute -top-10 -right-10 w-full h-full border border-white/5 -z-0"></div>
+</div>
+</div>
+</section>
+<!-- The Seoul Heritage (Editorial Layout) -->
+<section class="py-32 overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-24">
+<span class="font-label-caps text-label-caps text-outline mb-4 block">OUR ROOTS</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">The Seoul Heritage</h2>
+<p class="font-body-lg text-on-surface-variant">Born in the vibrant intersections of Jinhwa, SHARAND draws inspiration from Seoul's architectural silences and high-speed energy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="reveal-on-scroll">
+<div class="aspect-[3/4] mb-8 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-cover bg-center" data-alt="A minimalist architectural shot of a modern building in Seoul, featuring clean lines, glass surfaces, and sharp geometric shadows. The sky is a deep, moody grey. The image represents the architectural inspiration behind the jewelry brand. Extremely high-end, editorial photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7Lxcb3WhrZUIHXZvyehOLprJ1b2JHhdMZsbXrmjoAtHLYVEdgkKQdnVxyoys4AP0qA1ykLsXwfQ9U6S4bu7sv1PzP_FlGZ6Edq-dLjMqpeLRZCRCQWO4618OjEFLprheBKtD1p24cH_uOZCHY9boaj5ck4rq7H9tK9cKaVfN6uvdRK5LZ7Vz7OgUkQep4nkEIlgEkTzRsqApgbQwij40vwyetD8JzQZtx_O_D9tzadLolWE80sKPRkw')"></div>
+</div>
+<h3 class="font-headline-sm text-primary mb-4">Architectural Integrity</h3>
+<p class="font-body-md text-on-surface-variant">Designs that echo the structural daring of modern Korean architecture.</p>
+</div>
+<div class="reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="aspect-[3/4] mb-8 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-cover bg-center" data-alt="A peaceful close-up of a traditional Korean Hanok roof detail against a dark, starry night. The ancient wooden patterns are subtle and elegant. The lighting is soft and moonlit, bridging the gap between old world Seoul and modern luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4DsHKCowbJLSx2o7G5uPC_NfWQf2j3M46M1OkYQPkB48tGgIkjdWW0HeSOgS0DcdNSfzp-M-s1kJ30nde9D0hRNZJGemRpfZgsbJvlNEjHXWg5T4SY0OlNov2LXUrWs9vamL0oO76IQRcSD1Bt-GtGmP2OwH9WtbkFjyPoV_i3W0flVFbUr04VT90PV7op7jv1dPckhERFdeUZPDXMKHDvoOBB-TBc_rQa7HIFZKDg0tqRxZpQqOXGQ')"></div>
+</div>
+<h3 class="font-headline-sm text-primary mb-4">Timeless Tradition</h3>
+<p class="font-body-md text-on-surface-variant">Preserving the soul of Jinhwa through centuries-old metalwork mastery.</p>
+</div>
+<div class="reveal-on-scroll" style="transition-delay: 400ms;">
+<div class="aspect-[3/4] mb-8 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-fashion portrait of a person with minimalist styling, wearing a singular, bold SHARAND statement necklace. The background is a flat, deep charcoal grey. The person has a quiet, confident expression. The lighting highlights the texture of the skin and the sparkle of the diamonds." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBI_sO1LPZCT7QJYNd5Z_XMzy0ZxyDPlBLhxDgVS1rYQyck4bOjnkzl_5dsU8FRQpGfwwuShCrNHcA3tUPyV76Smna1Zvlmo6DYEGpb3qh2xv1l-27M7w_i_2MiJXRolA3zS_P3ZoRWIFveELnA2Gs1qEN-8bK4n5r2yIhA5BWteCNFOLXxVqqW4RozfnJXdvPbqTGzGOy6WTGRMoVuwgpKXNBRF82F5uiVTqCnaaFV4-HJQYnJdmCkzQ')"></div>
+</div>
+<h3 class="font-headline-sm text-primary mb-4">Modern Seoulite</h3>
+<p class="font-body-md text-on-surface-variant">A global aesthetic for the discerning contemporary collector.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Appointment CTA -->
+<section class="py-32 px-margin-mobile">
+<div class="max-w-4xl mx-auto glass-effect p-16 md:p-24 text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary mb-8">Personalize Your Journey</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">Whether seeking a bespoke creation or exploring our signature collections, our consultants await you in our Seoul Flagship.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<a class="px-12 py-4 bg-primary text-background font-label-caps text-label-caps tracking-widest hover:bg-secondary transition-colors duration-300" href="#">BOOK A CONSULTATION</a>
+<a class="px-12 py-4 border border-white/30 text-primary font-label-caps text-label-caps tracking-widest hover:bg-white/10 transition-colors duration-300" href="#">FIND A BOUTIQUE</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 bg-background">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto gap-12">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<img alt="SHARAND Logo" class="h-8 w-8 invert opacity-50" src="https://lh3.googleusercontent.com/aida/AP1WRLvl6llVlPoEMXXPOukLFTcFqXsE5Nar5vB_PUcXQDU9qKm7Q_pDKUmpuy8048pmMQEQ5kXcuaNknPJSq0m-iTSl9hIxG49SlycsOM3jzzRQvulCTnOU4lH6GAr4xQPKWOca48u2jrvG39Ou_2g-hNyifOC2y6f7ScxDyHFZu9tyh5pwtWrBh9OXhMK1iZWQX2RgxxdB5xzBmGaL1WrpjubnrgF9DWAlHF-YdjLN5aN1BS75eltGVAXczm-o"/>
+<span class="font-display-lg text-display-lg-mobile text-primary leading-none">SHARAND</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4" href="#">Sustainability</a>
+<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4" href="#">Ethics</a>
+<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4" href="#">Press</a>
+<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4" href="#">Contact</a>
+<a class="font-label-caps text-label-caps text-on-secondary-fixed-variant hover:text-primary transition-colors hover:underline underline-offset-4" href="#">Boutiques</a>
+</div>
+</div>
+<div class="text-right flex flex-col items-end gap-6">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Newsletter</p>
+<div class="flex w-full max-w-sm border-b border-white/30 pb-2">
+<input class="bg-transparent border-none text-primary font-body-md placeholder:text-outline w-full focus:ring-0" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined text-primary">arrow_forward</button>
+</div>
+<p class="font-label-caps text-[10px] text-on-secondary-fixed-variant mt-4">© 2024 SHARAND Jinhwa Seoul. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal observer
+        const observerOptions = {
+            threshold: 0.1
+        };
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-image" role="img" aria-label="SHARAND JINHWA SEOUL fine jewelry maison exterior"></div>
-      <div class="hero-vignette"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">Fine Jewelry Maison · Seoul</p>
-        <h1 id="hero-title">Built in shadow.<br><em>Born to shine.</em></h1>
-        <p class="hero-intro">검은 석재의 깊이와 금빛의 온기. SHARAND는 한 사람의 시간을 오래 비추는 주얼리를 서울에서 만듭니다.</p>
-        <a class="gold-link" href="#collection">Discover the collection <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-signature" aria-hidden="true">
-        <span class="monogram"><i class="monogram-arch"></i><i class="monogram-stem"></i><i class="monogram-leaf monogram-leaf-left"></i><i class="monogram-leaf monogram-leaf-right"></i></span>
-        <span>SHARAND<small>JINHWA SEOUL</small></span>
-      </div>
-      <p class="hero-caption">A private house of fine jewelry · Seoul, Korea</p>
-      <a class="scroll-cue" href="#maison"><span></span>Discover</a>
-    </section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
 
-    <section class="maison" id="maison">
-      <div class="maison-intro">
-        <p class="section-index">01 / The Maison</p>
-        <p class="section-prelude">A private house, shaped by devotion.</p>
-      </div>
-      <div class="maison-copy">
-        <h2>For those who<br>choose <em>depth</em><br>over noise.</h2>
-        <div class="maison-text">
-          <p>SHARAND JINHWA SEOUL은 선명하게 빛나는 것보다 오래 남는 빛을 믿습니다. 고요한 건축의 선, 시간을 품은 스톤, 손으로 다듬은 금속의 결을 하나의 주얼리에 담습니다.</p>
-          <a class="ink-link" href="#bespoke">The SHARAND philosophy <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="maison-rule">
-        <span>Founded in Seoul · 2026</span>
-        <span class="monogram" aria-hidden="true"><i class="monogram-arch"></i><i class="monogram-stem"></i><i class="monogram-leaf monogram-leaf-left"></i><i class="monogram-leaf monogram-leaf-right"></i></span>
-      </div>
-    </section>
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
 
-    <section class="collection" id="collection">
-      <div class="collection-heading">
-        <p class="section-index">02 / Signature pieces</p>
-        <div>
-          <h2>The new<br><em>classic.</em></h2>
-          <p>절제된 구조와 생동하는 빛 사이에서 태어난 SHARAND의 시그니처 피스.</p>
-        </div>
-        <a class="gold-link" href="#appointment">View all pieces <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="product-grid">
-        <article class="product-card product-card-1">
-          <div class="product-image"><img src="images/sharand-pendant.png" alt="The Arch pendant by SHARAND JINHWA SEOUL"></div>
-          <div class="product-meta"><p>Signature pendant</p><h3>The Arch</h3><span>18K yellow gold · Diamond</span><a href="#appointment">Discover <b aria-hidden="true">↗</b></a></div>
-        </article>
-        <article class="product-card product-card-2">
-          <div class="product-image"><img src="images/sharand-ring.png" alt="Nocturne ring by SHARAND JINHWA SEOUL"></div>
-          <div class="product-meta"><p>High jewelry ring</p><h3>Nocturne</h3><span>18K yellow gold · Pavé diamond</span><a href="#appointment">Discover <b aria-hidden="true">↗</b></a></div>
-        </article>
-        <article class="product-card product-card-3">
-          <div class="product-image"><img src="images/storefront-sharand.png" alt="SHARAND JINHWA SEOUL maison facade"></div>
-          <div class="product-meta"><p>Maison edition</p><h3>Jinhwa Salon</h3><span>Private viewing · Seoul</span><a href="#appointment">Discover <b aria-hidden="true">↗</b></a></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="craft" aria-labelledby="craft-title">
-      <div class="craft-visual">
-        <div class="craft-arch"><span class="monogram" aria-hidden="true"><i class="monogram-arch"></i><i class="monogram-stem"></i><i class="monogram-leaf monogram-leaf-left"></i><i class="monogram-leaf monogram-leaf-right"></i></span></div>
-        <p>JINHWA SEOUL<br>FINE JEWELRY</p>
-        <span>HAND-FINISHED</span>
-      </div>
-      <div class="craft-copy">
-        <p class="section-index">03 / The atelier</p>
-        <h2 id="craft-title">The hand<br>behind the <em>light.</em></h2>
-        <p>한 줄의 선을 고르고, 원석의 표정을 읽고, 금속을 수십 번 다듬습니다. SHARAND의 모든 피스는 소재의 본질과 착용하는 사람의 이야기를 함께 고려해 완성됩니다.</p>
-        <ul>
-          <li><span>01</span>Sketches shaped in Seoul</li>
-          <li><span>02</span>Stones selected for character</li>
-          <li><span>03</span>Finished by hand, without haste</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="bespoke" id="bespoke">
-      <div class="bespoke-stone" aria-hidden="true"><span></span><span></span><span></span></div>
-      <div class="bespoke-copy">
-        <p class="eyebrow">The private salon</p>
-        <h2>A jewel with<br>only one <em>owner.</em></h2>
-        <p>기억과 약속, 새로운 시작을 위한 단 하나의 작품. 프라이빗 살롱에서 원석부터 형태, 마지막 세팅까지 함께 결정합니다.</p>
-        <a class="light-button" id="appointment" href="#visit">Begin a private appointment <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="visit" id="visit">
-      <p class="section-index">04 / Visit SHARAND</p>
-      <div class="visit-lockup">
-        <span class="monogram" aria-hidden="true"><i class="monogram-arch"></i><i class="monogram-stem"></i><i class="monogram-leaf monogram-leaf-left"></i><i class="monogram-leaf monogram-leaf-right"></i></span>
-        <p>SHARAND</p><span>JINHWA SEOUL</span>
-      </div>
-      <div class="visit-copy">
-        <h2>By appointment,<br><em>in Seoul.</em></h2>
-        <p>프라이빗 뷰잉과 베스포크 상담은 예약제로 운영됩니다. 당신의 다음 빛나는 순간을 위해 시간을 비워두겠습니다.</p>
-        <div class="visit-action"><span>Seoul, Korea</span><a class="ink-link" href="mailto:atelier@sharandjinhwaseoul.com">Contact the atelier <b aria-hidden="true">↗</b></a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <a class="brand-lockup" href="#top">
-      <span class="monogram" aria-hidden="true"><i class="monogram-arch"></i><i class="monogram-stem"></i><i class="monogram-leaf monogram-leaf-left"></i><i class="monogram-leaf monogram-leaf-right"></i></span>
-      <span class="brand-type"><b>SHARAND</b><small>JINHWA SEOUL</small></span>
-    </a>
-    <p>Fine jewelry, built in shadow and born to shine.</p>
-    <nav aria-label="Footer navigation"><a href="#collection">Collections</a><a href="#maison">The Maison</a><a href="#bespoke">Bespoke</a><a href="#visit">Visit</a></nav>
-    <small>© 2026 SHARAND JINHWA SEOUL. All rights reserved.</small>
-  </footer>
-
-  <script src="app.js?v=20260801" defer></script>
-  <script src="auth.js?v=20260801" type="module"></script>
-</body>
-</html>
+        // Mobile Menu Toggle (Mockup interaction)
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', () => {
+            alert('Menu system would slide in from left as defined in SideNavBar JSON specifications.');
+        });
+    </script>
+</body></html>
